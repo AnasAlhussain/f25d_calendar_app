@@ -5,7 +5,7 @@ const CalandarApp = () => {
         <div className="calendar-app">
         <div className="calendar">
             <h1 className="heading">Calendar App</h1>
-            <div className="navigate-data">
+            <div className="navigate-date">
                 <h2 className="month">Sep</h2>
                 <h2 className="year">2025</h2>
                 <div className="buttons">
@@ -59,17 +59,18 @@ const CalandarApp = () => {
         </div>
         <div className="events">
             <div className="event-popup">
-                <div className="time-inpu">
+                <div className="time-input">
                     <div className="event-popup-time">
-                        <input type="number" name="hours" min={0} max={24} className="hours" />
-                        <input type="number" name="minutes" min={0} max={59} className="minutes" />
+                        Time
                     </div>
-                    <textarea placeholder="Enter Event Text (Max 60 characters)" maxLength={60}></textarea>
+                    <input type="number" name="hours" min={0} max={24} className="hours" />
+                        <input type="number" name="minutes" min={0} max={59} className="minutes" />
+                </div>
+                <textarea placeholder="Enter Event Text (Max 60 characters)" maxLength={60}></textarea>
                     <button className="event-popup-btn">Add Event</button>
                     <button className="close-event-popup">
-                         <i className="bx bx-x"></i>
+                        <i className="bx bx-x"></i>
                     </button>
-                </div>
             </div>
             <div className="event">
                 <div className="event-date-wrapper">
@@ -83,8 +84,7 @@ const CalandarApp = () => {
                 </div>
             </div>
         </div>
-      
-        </div>
+   </div>
   );
 };
 
